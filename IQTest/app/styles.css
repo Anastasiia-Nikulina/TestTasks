@@ -1,0 +1,52 @@
+@import "./css/fonts.css";
+@import "./css/buttons.css";
+@import "./css/tag-styles.css";
+@import "./css/text-headers.css";
+@import "./css/header.css";
+@import "./css/intro-section.css";
+@import "./css/info-section.css";
+@import "./css/details-section.css";
+@import "./css/offer-section.css";
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #FFC700;
+    --dark-header: #181818;
+    --dark-body: #272727;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.body {
+    font-family: "PTSerif", "Times New Roman", serif;
+    background-color: var(--dark-body);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    caret-color: transparent;
+
+}
+
+.container {
+    min-width: 320px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

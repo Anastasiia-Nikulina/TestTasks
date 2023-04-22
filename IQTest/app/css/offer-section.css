@@ -1,0 +1,66 @@
+
+.offer {
+    font-family: "Merriweather", "Times New Roman", serif;
+    background-image: url(../../img/rain_bk2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.offer-text-1 {
+    padding-top: 54px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .offer-text-1 {
+        width: 100%;
+    }
+
+}
+
+.offer-article {
+    padding: 14px 0 33px;
+    position: relative;
+    z-index: 1;
+}
+
+.offer-text-2 {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: var(--dark-header);
+    padding: 29px 15px 31px;
+    background-color: rgba(243, 243, 242, 0.8);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.offer-btn-wrap {
+    text-align: center;
+    padding-bottom: 52px;
+}
+
+.offer-wrap {
+    position: relative;
+}
+
+.offer-bg-image1 {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: 0;
+}
+
+.offer-bg-image2 {
+    position: absolute;
+    right: 0;
+    bottom: 38%;
+    z-index: 0;
+}

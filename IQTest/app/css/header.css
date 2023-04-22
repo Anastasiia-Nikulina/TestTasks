@@ -1,0 +1,113 @@
+.header {
+    background-color: var(--dark-header);
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0 13px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 24px;
+    height: 4px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(218, 218, 218, 0.5);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 20px;
+    color: var(--white);
+}
+
+.nav-link {    
+    text-transform: uppercase;   
+    margin-left: 40px;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        margin: auto;
+        padding-left: 0;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--dark-header);
+        width: inherit;
+        transition: 0.3s;
+        padding-top: 64px;        
+        z-index: 1;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        width: -webkit-fill-available;
+    }
+
+    .nav-item {
+        margin-bottom: 27px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .hamburger.active {
+        margin-left: auto;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: rgba(255, 199, 0, 1);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: rgba(255, 199, 0, 1);
+    }
+}
+.footer {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 30px;
+}

@@ -1,0 +1,35 @@
+
+.button {
+    cursor: pointer;
+    font-family: "Merriweather", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 20px;
+    padding: 13px 34px;
+}
+
+.button__yellow {
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+}
+
+.button__dark {
+    color: var(--white);
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.button-next__grey {
+    background: #DADADA;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.button-next__yellow {
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    border-radius: 20px;
+}

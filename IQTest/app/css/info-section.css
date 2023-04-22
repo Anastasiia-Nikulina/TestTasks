@@ -1,0 +1,58 @@
+.info {
+    font-family: "Yeseva-One", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    background: radial-gradient(52.2% 50.29% at 49.13% 49.71%, #2950C2 0%, rgba(38, 91, 199, 0.96) 40.63%, rgba(39, 98, 187, 0) 85.42%);
+    background-image: url(../../img/bg-2nd-section.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.info-wrap {
+    padding: 82px 0 50px;
+    position: relative;
+}
+
+.info-wrap:before {
+    content: " ";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../../img/symbol.svg);
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.info-wrap:after {
+    content: " ";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../../img/symbol2.svg);
+    position: absolute;
+    bottom: 7%;
+    right: 9%;
+}
+
+.info-text {    
+    color: var(--white);
+    position: relative;
+}
+
+.info-text::after {
+    content: "";
+    background-image: url(../../img/symbol.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.info-text::before {
+    content: "";
+    background-image: url(../../img/symbol.svg);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IQ Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/styles.css">
+    <link rel="stylesheet" href="app/css/styles-test.css">
+    <script type="module" src="app/index.js" async defer></script>
+</head>
+
+<body class="body body__test container">
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="./img/rain_bk3.png" height="47" width="48" alt="">
+            </a>
+            <span class="h1 h1-header h1-results">тест на определение IQ</span>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#offer" class="nav-link">информация о тесте</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../IQTest/iqtest.html" class="nav-link">пройти тест</a>
+                </li>
+            </ul>
+            <div class="hamburger ">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+        <div class="test">
+            <form name="testForm" class="test-form">
+                <div class="test-question test-question__1">
+                    <h3 class="test-header">ваш пол:</h3>
+                    <label>
+                        <input type="radio" name="q1" value="мужчина" id="q1a">мужчина
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="женщина" id="q1b">женщина
+                    </label>
+                </div>
+
+                <div class="test-question test-question__2" style="display: none">
+                    <h3 class="test-header">укажите ваш возраст:</h3>
+                    <label><input type="radio" name="q2" value="до18" id="q2a">До 18</label>
+                    <label><input type="radio" name="q2" value="18-28" id="q2b">От 18 до 28</label>
+                    <label><input type="radio" name="q2" value="29-35" id="q2c">от 29 до 35</label>
+                    <label><input type="radio" name="q2" value="36" id="q2d">От 36</label>
+                </div>
+
+                <div class="test-question test-question__3" style="display: none">
+                    <h3 class="test-header">Выберите лишнее:</h3>
+                    <label><input type="radio" name="q3" value="дом" id="q3a">Дом</label>
+                    <label><input type="radio" name="q3" value="шалаш" id="q3b">Шалаш</label>
+                    <label><input type="radio" name="q3" value="бунгало" id="q3c">Бунгало</label>
+                    <label><input type="radio" name="q3" value="скамейка" id="q3d">Скамейка</label>
+                    <label><input type="radio" name="q3" value="хижина" id="q3e">Хижина</label>
+                </div>
+
+                <div class="test-question test-question__4" style="display: none">
+                    <h3 class="test-header">Продолжите числовой ряд: <br> 18 20 24 32</h3>
+                    <label><input type="radio" name="q4" value="62" id="q4a">62</label>
+                    <label><input type="radio" name="q4" value="48" id="q4b">48</label>
+                    <label><input type="radio" name="q4" value="74" id="q4c">74</label>
+                    <label><input type="radio" name="q4" value="57" id="q4d">57</label>
+                    <label><input type="radio" name="q4" value="60" id="q4e">60</label>
+                    <label><input type="radio" name="q4" value="77" id="q4f">77</label>
+                </div>
+
+                <div class="test-question test-question__5" style="display: none">
+                    <h3 class="test-header">Выберите цвет, который сейчас наиболее Вам приятен:</h3>
+                    <div class="test-color-scheme">
+                        <label>
+                            <div style="background-color: #A8A8A8; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="серый" id="q5a"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #0000A9; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="темносиний" id="q5b"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #00A701; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="лаймовый" id="q5c"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #F60100; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="красный" id="q5d"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #FDFF19; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="желтый" id="q5e"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #A95403; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="коричневый" id="q5f"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #000000; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="черный" id="q5g"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #850068; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="пурпурный" id="q5h"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color:#46B2AC; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q5" value="бирюзовый" id="q5i"><br>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="test-question test-question__6" style="display: none">
+                    <h3 class="test-header">Отдохните пару секунд, еще раз Выберите цвет, который сейчас наиболее Вам
+                        приятен:</h3>
+                    <div class="test-color-scheme">
+                        <label>
+                            <div style="background-color: #A8A8A8; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="серый" id="q6a"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #46B2AC; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="бирюзовый" id="q6b"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #A95403; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="коричневый" id="q6c"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #00A701; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="лаймовый" id="q6d"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #000000; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="черный" id="q6e"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #F60100; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="красный" id="q6f"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #850068; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="пурпурный" id="q6g"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #FDFF19; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="желтый" id="q6h"><br>
+                            </div>
+                        </label>
+                        <label>
+                            <div style="background-color: #0000A9; width: 75px; height: 75px;" class="test-color-item">
+                                <input type="radio" name="q6" value="темносиний" id="q6i"><br>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="test-question test-question__7" style="display: none">
+                    <h3 class="test-header">Какой из городов лишний?</h3>
+                    <label><input type="radio" name="q7" value="вашингтон" id="q7a">Вашингтон<br></label>
+                    <label><input type="radio" name="q7" value="лондон" id="q7b">Лондон<br></label>
+                    <label><input type="radio" name="q7" value="париж" id="q7c">Париж<br></label>
+                    <label><input type="radio" name="q7" value="нью-йорк" id="q7d">Нью-Йорк<br></label>
+                    <label><input type="radio" name="q7" value="москва" id="q7e">Москва<br></label>
+                    <label><input type="radio" name="q7" value="оттава" id="q7f">Оттава<br></label>
+                </div>
+
+                <div class="test-question test-question__8" style="display: none">
+                    <h3 class="test-header">Выберите правильную фигуру из четырёх пронумерованных.</h3>
+                    <div class="test-imgbox">
+                        <img src="./img/test-img1.png" height="207" width="228" alt="test-img2">
+                    </div>
+                    <div class="imgbox-square-wrap">
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">1</p>
+                                <input type="radio" name="q8" value="1" id="q8a">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">2</p>
+                                <input type="radio" name="q8" value="2" id="q8b">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">3</p>
+                                <input type="radio" name="q8" value="3" id="q8c">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">4</p>
+                                <input type="radio" name="q8" value="4" id="q8d">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="test-question test-question__9" style="display: none">
+                    <h3 class="test-header">Вам привычнее и важнее:</h3>
+                    <label><input type="radio" name="q9" value="a" id="q9a">Наслаждаться каждой минутой проведенного
+                        времени<br></label>
+                    <label><input type="radio" name="q9" value="b" id="q9b">Быть устремленными мыслями в
+                        будущее<br></label>
+                    <label><input type="radio" name="q9" value="c" id="q9c">Учитывать в ежедневной практике прошлый
+                        опыт<br></label>
+                </div>
+
+                <div class="test-question test-question__10" style="display: none">
+                    <h3 class="test-header">Какое определение, по-Вашему, больше подходит к этому геометрическому
+                        изображению:</h3>
+                    <div class="test-imgbox">
+                        <img src="./img/test-img2.png" height="207" width="228" alt="test-img2">
+                    </div>
+                    <label><input type="radio" name="q10" value="a" id="q10a">оно остроконечное</label>
+                    <label><input type="radio" name="q10" value="b" id="q10b">оно устойчиво</label>
+                    <label><input type="radio" name="q10" value="c" id="q10c">оно-находится в состоянии
+                        равновесия</label>
+                </div>
+
+                <div class="test-question test-question__11" style="display: none">
+                    <h3 class="test-header">Вставьте подходящее число</h3>
+                    <div class="test-imgbox">
+                        <img src="./img/test-img3.png" height="207" width="228" alt="test-img2">
+                    </div>
+                    <div class="imgbox-square-wrap">
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">34</p>
+                                <input type="radio" name="q11" value="34" id="q11a">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">36</p>
+                                <input type="radio" name="q11" value="36" id="q11b">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">53</p>
+                                <input type="radio" name="q11" value="53" id="q11c">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">44</p>
+                                <input type="radio" name="q11" value="44" id="q11d">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">66</p>
+                                <input type="radio" name="q11" value="66" id="q11e">
+                            </div>
+                        </label>
+                        <label>
+                            <div class="imgbox-square">
+                                <p class="square-text">42</p>
+                                <input type="radio" name="q11" value="42" id="q11f">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <button id="nextBtn" class="details-btn button button-next__grey">
+                    <p>далее</p>
+                </button>
+                <div class="test-results" style="display: none">
+                    <div>
+                        <h2>обработка результатов</h2>
+                        <div class="loader"></div>
+                        <p class="test-results-text">Определение стиля мышления...</p>
+                    </div>
+                </div>
+                <div class="final" style="display: none;">
+                    <h3 class="final-header-h3">Ваш результат рассчитан:</h3>
+                    <p class="final-text"><span style="text-decoration-line: underline;">вы относитесь к 3%</span>
+                        респондентов,
+                        чей уровень интеллекта более чем на 15 пунктов отличается от среднего в
+                        большую или меньшую сторону!</p>
+                    <h2 class="final-header-h2">Скорее получите свой результат!</h2>
+                    <div class="final-wrap">
+                        <p class="final-wrap-text">В целях защиты персональных данных результат теста, их подробная
+                            интерпретация и рекомендации
+                            доступны в виде голосового сообщения по звонку с вашего мобильного телефона</p>
+                    </div>
+                    <span class="final-offer">Звоните скорее, запись доступна всего <br><span id="timer"
+                            style="font-size: 20px;"></span> минут </span>
+                    <div class="final-call">
+                        <button type="submit" class="test-submit">
+                            <p>позвонить и прослушать результат</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer container" style="display: none">
+        <p>TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI
+            IMPLINITI,</p>
+    </footer>
+</body>
+
+</html>
